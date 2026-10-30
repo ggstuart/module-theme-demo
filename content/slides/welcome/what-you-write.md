@@ -1,9 +1,13 @@
 ---
 title: What you write
+classes: [top-bun, gap]
 params:
   layout:
-    cols: 1fr 1fr
+    cols: 3fr 2fr
+    rows: auto 1fr
 ---
+
+> This is *all* there is to a slide.
 
 ```markdown {linenos=false}
 ---
@@ -17,7 +21,5 @@ Plants turn **light** into food.
 - makes oxygen
 ```
 
-> This is *all* there is to a slide.
->
-> A few lines at the top give it a title.
-> Below that you just type, using `**stars**` for bold and `-` for bullet points.
+A few lines at the top give it a title.
+Below that you just type, using `**stars**` for bold and `-` for bullet points.

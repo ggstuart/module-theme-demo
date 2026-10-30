@@ -2,8 +2,10 @@
 title: SQL
 params:
   layout:
-    cols: 2fr 1fr
+    rows: 1fr auto 1fr
 ---
+
+> Point at particular lines by listing them after the language name.
 
 ```sql {hl_lines=[4]}
 SELECT s.name, AVG(m.mark) AS average
@@ -13,4 +15,4 @@ GROUP BY s.name
 ORDER BY average DESC;
 ```
 
-> Line 4 is highlighted with `{hl_lines=[4]}` after the language name.
+> Line 4 is highlighted with `{hl_lines=[4]}`.

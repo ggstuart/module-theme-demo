@@ -1,9 +1,13 @@
 ---
 title: Python
+classes: [burger, gap]
 params:
   layout:
-    cols: 2fr 1fr
+    cols: 3fr 2fr
+    rows: 1fr auto 1fr
 ---
+
+> Indentation matters in Python, and it is kept exactly.
 
 ```python
 def average(marks):
@@ -14,4 +18,8 @@ def average(marks):
 print(average([72, 65, 80]))
 ```
 
-> Indentation matters in Python, and it is kept exactly.
+```text {linenos=false}
+72.33333333333333
+```
+
+> On the right is what it prints, in a `text` block.

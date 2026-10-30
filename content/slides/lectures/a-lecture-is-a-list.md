@@ -1,9 +1,13 @@
 ---
 title: A lecture is a list
+classes: [burger, gap]
 params:
   layout:
-    cols: 1fr 1fr
+    cols: 3fr 2fr
+    rows: 1fr auto 1fr
 ---
+
+> The lecture file just lists its slides, in order.
 
 ```yaml {linenos=false}
 ---
@@ -19,6 +23,6 @@ slides:
 How slides and lectures fit together.
 ```
 
-> The lecture file just lists its slides, in order.
->
-> The title slide, the contents slide and the "any questions?" slide at the end are made for you.
+The title slide, the contents slide and the "any questions?" slide at the end are made for you.
+
+> To reorder the lecture, move the lines in the list.

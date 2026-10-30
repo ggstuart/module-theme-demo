@@ -1,8 +1,10 @@
 ---
 title: What students see
+classes: [bottom-bun, gap]
 params:
   layout:
-    cols: 1fr 1fr
+    cols: 3fr 2fr
+    rows: 1fr auto
 ---
 
 > Plants turn **light** into food.
@@ -11,4 +13,6 @@ params:
 > - needs carbon dioxide
 > - makes oxygen
 
-The same text, styled and laid out for you. Students move through slides with the arrow keys, by swiping on a phone, or with the buttons at the bottom.
+Students move through slides with the arrow keys, by swiping on a phone, or with the buttons at the bottom.
+
+> The same text, styled and laid out for you.
