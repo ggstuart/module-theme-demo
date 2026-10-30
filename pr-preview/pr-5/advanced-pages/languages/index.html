@@ -1,0 +1,394 @@
+<!doctype html><html lang=en-gb><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>DEMO1001: Teaching materials with Hugo
+&ndash; Teaching materials with Hugo</title><link rel="shortcut icon" href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg type=image/x-icon><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/onedark.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/style.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/example.css><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/js/exercise.js type=module></script><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/js/menu.js type=module></script></head><body><header class=main-header aria-labelledby=main-title><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/ aria-label=home><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg alt="the module logo"></a><h1 id=main-title><span class="with-colon module-code">DEMO1001</span>
+<span class=module-name>Teaching materials with Hugo</span></h1><nav aria-label="main menu"><label for=toggler aria-label="menu toggler"></label><input id=toggler type=checkbox aria-label="menu toggler">
+<a href=/module-theme-demo/pr-preview/pr-5/advanced-pages/>Advanced: Exercises</a><h2>exercises</h2><a href=/module-theme-demo/pr-preview/pr-5/advanced-pages/languages/>Code in Many Languages</a>
+<a href=/module-theme-demo/pr-preview/pr-5/advanced-pages/shortcodes/>Shortcodes, Links and Live Examples</a>
+<a href=/module-theme-demo/pr-preview/pr-5/advanced-pages/diagrams/>Diagrams From Text</a>
+<a href=/module-theme-demo/pr-preview/pr-5/advanced-pages/toc-and-nav/>Contents List, Headings and Prev/Next</a></nav></header><nav aria-label=breadcrumbs class=breadcrumbs><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/>teaching materials with hugo</a>
+<a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/advanced-pages/>advanced: exercises</a>
+<strong title="this page is Code in many languages">code in many languages</strong></nav><main><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg alt="the module logo"><header class=exercise><h2 class=special>Code in many languages</h2><nav class=pagination><a class=next href=/module-theme-demo/pr-preview/pr-5/advanced-pages/shortcodes/>Shortcodes, links and live examples</a></nav></header><section><nav id=TableOfContents><ul><li><a href=#which-blocks-get-a-copy-button>Which blocks get a copy button?</a><ul><li><a href=#bash><code>bash</code></a></li><li><a href=#powershell><code>powershell</code></a></li><li><a href=#http><code>http</code></a></li><li><a href=#json><code>json</code></a></li><li><a href=#php><code>php</code></a></li><li><a href=#markdown><code>markdown</code></a></li><li><a href=#plaintext><code>plaintext</code></a></li><li><a href=#text><code>text</code></a></li><li><a href=#javascript><code>javascript</code></a></li><li><a href=#javascript-1><code>JavaScript</code></a></li><li><a href=#js><code>js</code></a></li><li><a href=#html><code>HTML</code></a></li><li><a href=#html-1><code>html</code></a></li><li><a href=#css><code>css</code></a></li><li><a href=#typescript><code>typescript</code></a></li><li><a href=#java><code>java</code></a></li><li><a href=#csharp><code>csharp</code></a></li><li><a href=#c><code>c</code></a></li><li><a href=#go><code>go</code></a></li><li><a href=#rust><code>rust</code></a></li><li><a href=#yaml><code>yaml</code></a></li><li><a href=#toml><code>toml</code></a></li><li><a href=#diff><code>diff</code></a></li><li><a href=#dockerfile><code>dockerfile</code></a></li><li><a href=#not-a-language><code>not-a-language</code></a></li><li><a href=#none><code>(none)</code></a></li></ul></li><li><a href=#highlight-options>Highlight options</a></li><li><a href=#inline-code>Inline code</a></li><li><a href=#code-inside-lists>Code inside lists</a></li><li><a href=#a-long-listing>A long listing</a></li><li><a href=#a-very-long-line>A very long line</a></li></ul></nav><blockquote><p>Work through the steps in order. Each step only takes a few minutes, and
+nothing you do here can break anything.</p></blockquote></section><section><p>Every language name a colleague is likely to type, highlight options, inline code and code inside lists.</p><h2 id=which-blocks-get-a-copy-button>Which blocks get a copy button?</h2><p>Each heading below is the exact language name after the three backticks.
+On 2026-27 only <code>html</code>, <code>css</code>, <code>js</code>, <code>JavaScript</code>, <code>json</code>, <code>php</code> and <code>phtml</code> get a button (see <em>Known bugs</em>).</p><h3 id=bash><code>bash</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=k>for</span> f in *.md<span class=p>;</span> <span class=k>do</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;</span><span class=nv>$f</span><span class=s2>: </span><span class=k>$(</span>wc -l &lt; <span class=s2>&#34;</span><span class=nv>$f</span><span class=s2>&#34;</span><span class=k>)</span><span class=s2> lines&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=powershell><code>powershell</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=nb>Get-ChildItem</span> <span class=p>*.</span><span class=nb>md </span><span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;{0}: {1} lines&#34;</span> <span class=o>-f</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Name</span><span class=p>,</span> <span class=p>(</span><span class=nb>Get-Content</span> <span class=nv>$_</span><span class=p>).</span><span class=py>Count</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=http><code>http</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-http data-lang=http><span class=line><span class=cl><span class=nf>GET</span> <span class=nn>/api/students/42</span> <span class=kr>HTTP</span><span class=o>/</span><span class=m>1.1</span>
+</span></span><span class=line><span class=cl><span class=n>Host</span><span class=o>:</span> <span class=l>example.org</span>
+</span></span><span class=line><span class=cl><span class=n>Accept</span><span class=o>:</span> <span class=l>application/json</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=json><code>json</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;id&#34;</span><span class=p>:</span> <span class=mi>42</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;Ada&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;marks&#34;</span><span class=p>:</span> <span class=p>[</span><span class=mi>72</span><span class=p>,</span> <span class=mi>65</span><span class=p>,</span> <span class=mi>80</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=php><code>php</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=o>&lt;?</span><span class=nx>php</span>
+</span></span><span class=line><span class=cl><span class=nv>$name</span> <span class=o>=</span> <span class=nv>$_GET</span><span class=p>[</span><span class=s2>&#34;name&#34;</span><span class=p>]</span> <span class=o>??</span> <span class=s2>&#34;world&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>echo</span> <span class=s2>&#34;&lt;p&gt;Hello, &#34;</span> <span class=o>.</span> <span class=nx>htmlspecialchars</span><span class=p>(</span><span class=nv>$name</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&#34;&lt;/p&gt;&#34;</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=markdown><code>markdown</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=gh># A heading
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Some <span class=ge>*emphasis*</span> and a [<span class=nt>link</span>](<span class=na>https://example.org</span>).
+</span></span></code></pre></td></tr></table></div></div><h3 id=plaintext><code>plaintext</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-plaintext data-lang=plaintext><span class=line><span class=cl>Plain text: no colours, no copy button.
+</span></span></code></pre></td></tr></table></div></div><h3 id=text><code>text</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Also plain text.
+</span></span></code></pre></td></tr></table></div></div><h3 id=javascript><code>javascript</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=c1>// lowercase &#34;javascript&#34;
+</span></span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s2>&#34;hello&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=javascript-1><code>JavaScript</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-JavaScript data-lang=JavaScript><span class=line><span class=cl><span class=c1>// mixed case &#34;JavaScript&#34;
+</span></span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s2>&#34;hello&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=js><code>js</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// &#34;js&#34;
+</span></span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s2>&#34;hello&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html><code>HTML</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-HTML data-lang=HTML><span class=line><span class=cl><span class=c>&lt;!-- upper case &#34;HTML&#34; --&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>Hello<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html-1><code>html</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=c>&lt;!-- lower case &#34;html&#34; --&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>Hello<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=css><code>css</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>body</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>font-family</span><span class=p>:</span> <span class=n>system-ui</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=typescript><code>typescript</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>greet</span> <span class=o>=</span> <span class=p>(</span><span class=nx>name</span>: <span class=kt>string</span><span class=p>)</span><span class=o>:</span> <span class=kt>string</span> <span class=o>=&gt;</span> <span class=sb>`Hello, </span><span class=si>${</span><span class=nx>name</span><span class=si>}</span><span class=sb>`</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=java><code>java</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>record</span> <span class=nc>Student</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>mark</span><span class=p>)</span><span class=w> </span><span class=p>{}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=csharp><code>csharp</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-csharp data-lang=csharp><span class=line><span class=cl><span class=n>Console</span><span class=p>.</span><span class=n>WriteLine</span><span class=p>(</span><span class=s>$&#34;Hello, {name}!&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=c><code>c</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span> <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;hello</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span> <span class=k>return</span> <span class=mi>0</span><span class=p>;</span> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=go><code>go</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span><span class=w> </span><span class=nx>main</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kn>import</span><span class=w> </span><span class=s>&#34;fmt&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=kd>func</span><span class=w> </span><span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w> </span><span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;hello&#34;</span><span class=p>)</span><span class=w> </span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=rust><code>rust</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=k>fn</span> <span class=nf>main</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;hello&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=yaml><code>yaml</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=l>My page</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>type</span><span class=p>:</span><span class=w> </span><span class=l>exercise</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>weight</span><span class=p>:</span><span class=w> </span><span class=m>10</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=toml><code>toml</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[</span><span class=nx>params</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=nx>moduleCode</span> <span class=p>=</span> <span class=s1>&#39;DEMO1001&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=diff><code>diff</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl><span class=gd>- old line
+</span></span></span><span class=line><span class=cl><span class=gi>+ new line
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=dockerfile><code>dockerfile</code></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>FROM</span><span class=w> </span><span class=s>python:3.13-slim</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=k>COPY</span> . /app<span class=err>
+</span></span></span><span class=line><span class=cl><span class=k>CMD</span> <span class=p>[</span><span class=s2>&#34;python&#34;</span><span class=p>,</span> <span class=s2>&#34;/app/main.py&#34;</span><span class=p>]</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=not-a-language><code>not-a-language</code></h3><pre tabindex=0><code class=language-not-a-language data-lang=not-a-language>An unknown language name: shown plain, no error.
+</code></pre><h3 id=none><code>(none)</code></h3><pre tabindex=0><code>No language at all.
+</code></pre><h2 id=highlight-options>Highlight options</h2><p><code>{linenos=false}</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;no line numbers&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><p><code>{hl_lines=[2,"4-5"]}</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=hl><span class=lnt>2
+</span></span><span class=lnt>3
+</span><span class=hl><span class=lnt>4
+</span></span><span class=hl><span class=lnt>5
+</span></span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class="line hl"><span class=cl><span class=n>b</span> <span class=o>=</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl><span class=n>c</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class="line hl"><span class=cl><span class=n>d</span> <span class=o>=</span> <span class=mi>4</span>
+</span></span><span class="line hl"><span class=cl><span class=n>e</span> <span class=o>=</span> <span class=mi>5</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>{linenostart=199}</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>199
+</span><span class=lnt>200
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># this listing starts at line 199</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;line 200&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>{linenos=inline}</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=ln>1</span><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;numbers inside the code, so copying takes them too&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><h2 id=inline-code>Inline code</h2><p>Inline code such as <code>print("hi")</code>, <code>&lt;div class="x"></code> or <code>SELECT *</code> sits in a sentence, has no colours and no button.</p><h2 id=code-inside-lists>Code inside lists</h2><ol><li><p>Make a folder:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>mkdir week1
+</span></span></code></pre></td></tr></table></div></div></li><li><p>Put a file in it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>h1</span><span class=p>&gt;</span>Week 1<span class=p>&lt;/</span><span class=nt>h1</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>A nested bullet with code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;nested twice&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul></li><li><p>Done.</p></li></ol><h2 id=a-long-listing>A long listing</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 1 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 2 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 3 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 4 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 5 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 6 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 7 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 8 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 9 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 10 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 11 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 12 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 13 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 14 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 15 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 16 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 17 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 18 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 19 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 20 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 21 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 22 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 23 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 24 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 25 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 26 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 27 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 28 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 29 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 30 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 31 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 32 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 33 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 34 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 35 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 36 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 37 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 38 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 39 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 40 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 41 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 42 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 43 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 44 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 45 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 46 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 47 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 48 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 49 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 50 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 51 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 52 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 53 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 54 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 55 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 56 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 57 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 58 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 59 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 60 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 61 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 62 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 63 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 64 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 65 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 66 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 67 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 68 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 69 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 70 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 71 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 72 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 73 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 74 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 75 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 76 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 77 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 78 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 79 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 80 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 81 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 82 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 83 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 84 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 85 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 86 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 87 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 88 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 89 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 90 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 91 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 92 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 93 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 94 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 95 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 96 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 97 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 98 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 99 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 100 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 101 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 102 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 103 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 104 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 105 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 106 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 107 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 108 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 109 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 110 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 111 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 112 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 113 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 114 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 115 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 116 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 117 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 118 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 119 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;this is line 120 of a long listing, which scrolls inside the page&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=a-very-long-line>A very long line</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>wide</span> <span class=o>=</span> <span class=s2>&#34;a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, a very long line that does not wrap, &#34;</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div></section></main><footer><nav class=pagination><a class=next href=/module-theme-demo/pr-preview/pr-5/advanced-pages/shortcodes/>Shortcodes, links and live examples</a></nav><p id=theme><a target=_blank href=https://github.com/ggstuart/module>module theme
+</a>by ggstuart</p></footer></body></html>

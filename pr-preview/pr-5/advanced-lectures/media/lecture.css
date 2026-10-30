@@ -1,0 +1,2 @@
+/* A stylesheet in the lecture's own folder: loaded for this lecture only. */
+article.slide.title h2 { text-decoration: underline wavy hsl(30 90% 50%); }

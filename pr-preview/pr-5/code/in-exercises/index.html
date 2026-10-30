@@ -1,0 +1,125 @@
+<!doctype html><html lang=en-gb><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>DEMO1001: Teaching materials with Hugo
+&ndash; Teaching materials with Hugo</title><link rel="shortcut icon" href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg type=image/x-icon><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/onedark.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/style.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/css/example.css><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/js/exercise.js type=module></script><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/js/menu.js type=module></script></head><body><header class=main-header aria-labelledby=main-title><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/ aria-label=home><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg alt="the module logo"></a><h1 id=main-title><span class="with-colon module-code">DEMO1001</span>
+<span class=module-name>Teaching materials with Hugo</span></h1><nav aria-label="main menu"><label for=toggler aria-label="menu toggler"></label><input id=toggler type=checkbox aria-label="menu toggler">
+<a href=/module-theme-demo/pr-preview/pr-5/code/>Code Listings</a><h2>exercises</h2><a href=/module-theme-demo/pr-preview/pr-5/code/in-exercises/>Code in an Exercise</a><h2>lectures</h2><a href=/module-theme-demo/pr-preview/pr-5/code/on-slides/>Code on Slides</a></nav></header><nav aria-label=breadcrumbs class=breadcrumbs><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/>teaching materials with hugo</a>
+<a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/code/>code listings</a>
+<strong title="this page is Code in an exercise">code in an exercise</strong></nav><main><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-5/images/module-logo.svg alt="the module logo"><header class=exercise><h2 class=special>Code in an exercise</h2><nav class=pagination><a class=next href=/module-theme-demo/pr-preview/pr-5/code/on-slides/>Code on slides</a></nav></header><section><nav id=TableOfContents><ul><li><a href=#the-whole-trick>The whole trick</a></li><li><a href=#python>Python</a></li><li><a href=#java>Java</a></li><li><a href=#javascript>JavaScript</a></li><li><a href=#html>HTML</a></li><li><a href=#sql>SQL</a></li><li><a href=#bash>Bash</a></li><li><a href=#useful-extras>Useful extras</a></li></ul></nav><blockquote><p>Work through the steps in order. Each step only takes a few minutes, and
+nothing you do here can break anything.</p></blockquote></section><section><p>How to put a code listing in an exercise, in six languages.</p><h2 id=the-whole-trick>The whole trick</h2><p>Write three backticks and the name of the language, paste the code, and finish with three backticks:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=s>```python
+</span></span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Hello, students!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=s>```</span>
+</span></span></code></pre></td></tr></table></div></div><p>That gives:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Hello, students!&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>The colours, the line numbers and the monospaced font are automatic.
+Indentation is kept exactly as you typed it, and quotes stay straight, so students can copy code that actually runs.</p><h2 id=python>Python</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>average</span><span class=p>(</span><span class=n>marks</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;&#34;&#34;Return the mean of a list of marks, or None for an empty list.&#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=ow>not</span> <span class=n>marks</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>sum</span><span class=p>(</span><span class=n>marks</span><span class=p>)</span> <span class=o>/</span> <span class=nb>len</span><span class=p>(</span><span class=n>marks</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>cohort</span> <span class=o>=</span> <span class=p>{</span><span class=s2>&#34;Ada&#34;</span><span class=p>:</span> <span class=p>[</span><span class=mi>72</span><span class=p>,</span> <span class=mi>65</span><span class=p>,</span> <span class=mi>80</span><span class=p>],</span> <span class=s2>&#34;Grace&#34;</span><span class=p>:</span> <span class=p>[</span><span class=mi>58</span><span class=p>,</span> <span class=mi>91</span><span class=p>,</span> <span class=mi>77</span><span class=p>]}</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>name</span><span class=p>,</span> <span class=n>marks</span> <span class=ow>in</span> <span class=n>cohort</span><span class=o>.</span><span class=n>items</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;</span><span class=si>{</span><span class=n>name</span><span class=si>}</span><span class=s2>: </span><span class=si>{</span><span class=n>average</span><span class=p>(</span><span class=n>marks</span><span class=p>)</span><span class=si>:</span><span class=s2>.1f</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=java>Java</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>public</span><span class=w> </span><span class=kd>class</span> <span class=nc>Greeting</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>args</span><span class=p>.</span><span class=na>length</span><span class=w> </span><span class=o>&gt;</span><span class=w> </span><span class=n>0</span><span class=w> </span><span class=o>?</span><span class=w> </span><span class=n>args</span><span class=o>[</span><span class=n>0</span><span class=o>]</span><span class=w> </span><span class=p>:</span><span class=w> </span><span class=s>&#34;world&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>1</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>&lt;=</span><span class=w> </span><span class=n>3</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=o>++</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>            </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>i</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;: Hello, &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;!&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=javascript>JavaScript</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>button</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=s2>&#34;#greet&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nx>button</span><span class=p>.</span><span class=nx>addEventListener</span><span class=p>(</span><span class=s2>&#34;click&#34;</span><span class=p>,</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kr>const</span> <span class=nx>name</span> <span class=o>=</span> <span class=nx>prompt</span><span class=p>(</span><span class=s2>&#34;What is your name?&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nx>alert</span><span class=p>(</span><span class=sb>`Hello, </span><span class=si>${</span><span class=nx>name</span> <span class=o>||</span> <span class=s2>&#34;stranger&#34;</span><span class=si>}</span><span class=sb>!`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=html>HTML</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;!DOCTYPE html&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;en&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>My first web page<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>h1</span><span class=p>&gt;</span>Hello, Learning Zone!<span class=p>&lt;/</span><span class=nt>h1</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>button</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;greet&#34;</span><span class=p>&gt;</span>Say hello<span class=p>&lt;/</span><span class=nt>button</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=sql>SQL</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> </span><span class=n>s</span><span class=p>.</span><span class=n>name</span><span class=p>,</span><span class=w> </span><span class=k>AVG</span><span class=p>(</span><span class=n>m</span><span class=p>.</span><span class=n>mark</span><span class=p>)</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>average</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>FROM</span><span class=w> </span><span class=n>students</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>s</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>JOIN</span><span class=w> </span><span class=n>marks</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>m</span><span class=w> </span><span class=k>ON</span><span class=w> </span><span class=n>m</span><span class=p>.</span><span class=n>student_id</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>s</span><span class=p>.</span><span class=n>id</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>WHERE</span><span class=w> </span><span class=n>m</span><span class=p>.</span><span class=k>year</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=mi>2026</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>GROUP</span><span class=w> </span><span class=k>BY</span><span class=w> </span><span class=n>s</span><span class=p>.</span><span class=n>name</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>HAVING</span><span class=w> </span><span class=k>AVG</span><span class=p>(</span><span class=n>m</span><span class=p>.</span><span class=n>mark</span><span class=p>)</span><span class=w> </span><span class=o>&gt;=</span><span class=w> </span><span class=mi>40</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=k>ORDER</span><span class=w> </span><span class=k>BY</span><span class=w> </span><span class=n>average</span><span class=w> </span><span class=k>DESC</span><span class=p>;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=bash>Bash</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># make a folder for the lab, and start a web server in it</span>
+</span></span><span class=line><span class=cl>mkdir -p ~/labs/week1 <span class=o>&amp;&amp;</span> <span class=nb>cd</span> ~/labs/week1
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;&lt;h1&gt;It works&lt;/h1&gt;&#34;</span> &gt; index.html
+</span></span><span class=line><span class=cl>python3 -m http.server <span class=m>8000</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=useful-extras>Useful extras</h2><p>Point at particular lines by listing them after the language:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>``<span class=sb>`python {hl_lines=[3,4]}
+</span></span></span><span class=line><span class=cl><span class=sb>...
+</span></span></span><span class=line><span class=cl><span class=sb>`</span>``
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=hl><span class=lnt>3
+</span></span><span class=hl><span class=lnt>4
+</span></span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>average</span><span class=p>(</span><span class=n>marks</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;&#34;&#34;Return the mean of a list of marks, or None for an empty list.&#34;&#34;&#34;</span>
+</span></span><span class="line hl"><span class=cl>    <span class=k>if</span> <span class=ow>not</span> <span class=n>marks</span><span class=p>:</span>
+</span></span><span class="line hl"><span class=cl>        <span class=k>return</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>sum</span><span class=p>(</span><span class=n>marks</span><span class=p>)</span> <span class=o>/</span> <span class=nb>len</span><span class=p>(</span><span class=n>marks</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>Turn the line numbers off for a one-liner with <code>{linenos=false}</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>python3 average.py
+</span></span></code></pre></div><p>Some languages also get a <strong>copy to clipboard</strong> button. See <em>Known bugs</em> for which ones.
+The name after the backticks can be any of <a href=https://gohugo.io/content-management/syntax-highlighting/#languages target=_blank>hundreds of languages</a>.</p></section></main><footer><nav class=pagination><a class=next href=/module-theme-demo/pr-preview/pr-5/code/on-slides/>Code on slides</a></nav><p id=theme><a target=_blank href=https://github.com/ggstuart/module>module theme
+</a>by ggstuart</p></footer></body></html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <style>
+        body { font-family: system-ui, sans-serif; display: grid; place-items: center; min-height: 90vh; margin: 0; background: #fff8f0; }
+        label { display: block; font-size: 1.1rem; margin-bottom: .5rem; }
+        input { font: inherit; padding: .4em .6em; border: 2px solid #e34f26; border-radius: .4em; }
+        output { display: block; margin-top: 1rem; font-size: 1.6rem; color: #b33a14; min-height: 2em; }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">What is your name?</label>
+        <input id="name" autocomplete="off" placeholder="Type here">
+        <output for="name" id="greeting"></output>
+    </form>
+    <script>
+        const input = document.getElementById("name");
+        const output = document.getElementById("greeting");
+        input.addEventListener("input", () => {
+            output.textContent = input.value ? `Hello, ${input.value}!` : "";
+        });
+        document.querySelector("form").addEventListener("submit", ev => ev.preventDefault());
+    </script>
+</body>
+</html>

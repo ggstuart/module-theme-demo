@@ -1,0 +1,2 @@
+/* Loaded by any lecture that uses this slide. */
+article.slide:has(img[src$="picture.svg"]) { outline: 6px dashed hsl(30 90% 50%); outline-offset: -6px; }
