@@ -1,0 +1,6 @@
+/* The theme's default slide text colour is commented out in style.css, which
+   leaves slide text pale on a pale slide. This restores the intended value.
+   Remove this file once the theme defines --clr-slide-text itself. */
+:root {
+    --clr-slide-text: hsl(0, 10%, 10%);
+}

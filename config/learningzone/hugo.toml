@@ -1,0 +1,7 @@
+# Settings for the Learning Zone package build:
+#   hugo --environment learningzone --destination course-package
+# The GitHub Action sets these for you, so this file is only needed to build
+# the package on your own computer.
+baseURL = "/"
+relativeURLs = true
+disableKinds = ["taxonomy", "term", "rss", "sitemap", "robotsTXT", "404"]

@@ -1,0 +1,23 @@
+baseURL = 'https://ggstuart-bot.github.io/example-module/'
+title = 'Teaching materials with Hugo'
+theme = 'module'
+
+[languages.en]
+  locale = 'en-gb'
+
+[params]
+  moduleCode = 'DEMO1001'
+  moduleName = 'Teaching materials with Hugo'
+  customcss = ['css/example.css']
+
+[markup]
+  # Use the theme's code highlighting settings.
+  _merge = 'deep'
+  [markup.goldmark.renderer]
+    # Lets you mix a little HTML into your Markdown when you need it.
+    unsafe = true
+
+# Use the theme's output settings (they add the slide layouts stylesheet,
+# and the Learning Zone package when you build with --environment learningzone).
+[outputs]
+  _merge = 'deep'

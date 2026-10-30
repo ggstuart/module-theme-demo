@@ -1,0 +1,4 @@
+[submodule "themes/module"]
+	path = themes/module
+	url = https://github.com/ggstuart-bot/Module.git
+	branch = learning-zone-export

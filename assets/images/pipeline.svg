@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" font-family="Ubuntu, 'Segoe UI', sans-serif" role="img" aria-labelledby="t">
+  <title id="t">Text files are built by GitHub into a website and a Learning Zone package</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#555"/>
+    </marker>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EF652A"/><stop offset="1" stop-color="#E34F26"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#264DE4"/><stop offset="1" stop-color="#2965F1"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="20" y="110" width="200" height="140" rx="14" fill="#fff" stroke="#555" stroke-width="2"/>
+    <text x="120" y="150" text-anchor="middle" font-size="22" font-weight="700" fill="#333">Your text files</text>
+    <text x="120" y="185" text-anchor="middle" font-size="17" fill="#555" font-family="'Ubuntu Mono', monospace">index.md</text>
+    <text x="120" y="210" text-anchor="middle" font-size="17" fill="#555" font-family="'Ubuntu Mono', monospace">slides/*.md</text>
+    <text x="120" y="235" text-anchor="middle" font-size="17" fill="#555" font-family="'Ubuntu Mono', monospace">pictures</text>
+  </g>
+  <line x1="225" y1="180" x2="345" y2="180" stroke="#555" stroke-width="3" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="350" y="120" width="200" height="120" rx="60" fill="url(#accent)"/>
+    <text x="450" y="172" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">GitHub</text>
+    <text x="450" y="200" text-anchor="middle" font-size="17" fill="#fff">builds it for you</text>
+  </g>
+  <line x1="555" y1="160" x2="665" y2="85" stroke="#555" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="555" y1="200" x2="665" y2="275" stroke="#555" stroke-width="3" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="670" y="30" width="210" height="110" rx="14" fill="url(#blue)"/>
+    <text x="775" y="78" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Website</text>
+    <text x="775" y="106" text-anchor="middle" font-size="16" fill="#fff">any device, any time</text>
+  </g>
+  <g>
+    <rect x="670" y="220" width="210" height="110" rx="14" fill="#00447c"/>
+    <text x="775" y="262" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Learning Zone</text>
+    <text x="775" y="290" text-anchor="middle" font-size="16" fill="#fff">one zip, imported</text>
+    <text x="775" y="312" text-anchor="middle" font-size="16" fill="#fff">into your module</text>
+  </g>
+</svg>
