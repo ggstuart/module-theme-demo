@@ -21,7 +21,7 @@ This repository includes a file `.github/dependabot.yml`.
 Once a week, GitHub's *Dependabot* checks for a newer version of the theme and, if there is one, opens a **pull request** in your repository called something like *Bump themes/module*.
 
 1. Open the **Pull requests** tab and open the pull request.
-2. Look at the **Checks**: the *Learning Zone package* workflow builds a package with the new theme. A green tick means it worked.
+2. Look at the **Checks** at the bottom of the pull request: the *Learning Zone package* workflow builds a package with the new theme and the *Website* workflow builds the site with it. A green tick means both built. (Pull requests from Dependabot are only built, not previewed.)
 3. Press **Merge pull request**. Your website and package now use the new theme.
 
 If you don't want an update yet, close the pull request. Nothing changes.

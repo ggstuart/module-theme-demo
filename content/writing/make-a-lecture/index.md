@@ -42,7 +42,7 @@ Create `content/writing/my-lecture/index.md` with:
 ---
 title: My first lecture
 type: lecture
-weight: 3
+weight: 20
 author: Your name
 slides:
   - /slides/my-topic/first.md
@@ -53,7 +53,7 @@ slides:
 A sentence that appears on the title slide.
 ```
 
-Commit it, and your lecture appears in the unit, after the other two pages.
+Commit it, and your lecture appears in the unit after the four pages already there (a higher `weight` comes later).
 
 ## Try a layout
 

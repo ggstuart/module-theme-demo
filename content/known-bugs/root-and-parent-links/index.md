@@ -1,10 +1,10 @@
 ---
-title: "(h) Links starting with / or ../ lose the site's folder"
+title: "(h) Links starting with /, ../ or # go to the wrong place"
 type: exercise
 weight: 8
 ---
 
-On a site that lives in a folder (every GitHub Pages project site, such as `…github.io/module-name/`), links that start with `/` or `../` miss out the folder.
+On a site that lives in a folder (every GitHub Pages project site, such as `…github.io/module-theme-demo/`), page links that start with `/`, `../` or `#`, and pictures from `static/` that start with `/`, go to the wrong address.
 
 <!--more-->
 
@@ -12,17 +12,34 @@ On a site that lives in a folder (every GitHub Pages project site, such as `…g
 
 ## Live example
 
-- `[the cheat sheet](/writing/cheat-sheet/)`: [the cheat sheet](/writing/cheat-sheet/)
-- `[the code unit](../../code/)`: [the code unit](../../code/)
-- `![a picture](/images/placeholder-blue.svg)`: ![a blue placeholder picture](/images/placeholder-blue.svg)
+| You write | Website | Learning Zone package |
+| --- | --- | --- |
+| `[the cheat sheet](/writing/cheat-sheet/)`: [the cheat sheet](/writing/cheat-sheet/) | broken (misses the site folder) | works |
+| `[a file in static](/known-bugs/iframe-paths/demo/)`: [a file in static](/known-bugs/iframe-paths/demo/) | broken | works |
+| `[the code unit](../../code/)`: [the code unit](../../code/) | broken | works, by luck: `../` is taken from the top of the site, and two levels up from here is the top of the package |
+| `[bug (c)](../merge-deep/)`: [bug (c)](../merge-deep/) | broken | broken |
+| `[back to the table](#live-example)`: [back to the table](#live-example) | goes to the home page | goes to the home page |
 
-While the bug is there the links go to the top of `github.io` (a "page not found") and the picture is missing. Once fixed, they work.
+Pictures:
+
+- From `assets/`, with a leading `/` (this works): `![](/images/placeholder-blue.svg)` ![a blue placeholder picture](/images/placeholder-blue.svg)
+- From `static/`, with a leading `/` (broken on the website): `![](/known-bugs/root-and-parent-links/static-picture.svg)` ![a purple placeholder picture](/known-bugs/root-and-parent-links/static-picture.svg)
+
+Once fixed, every link and picture above works in both.
 
 ## What is wrong
 
-The link and image hooks (`render-link.html`, `render-image.html`) pass any address that isn't a file they know to `relURL`.
-`relURL` treats a leading `/` as the top of the web server, not of the site, and turns `../…` into `/…`.
+The link and image hooks (`render-link.html`, `render-image.html`) first look for a file in the page's folder or in `assets/` (which is why the `assets/` picture works).
+Anything else goes through Hugo's `relURL`, which:
+
+- treats a leading `/` as the top of the web server, not of the site, so the site folder is lost;
+- turns `../…` into `/…`, so it is taken from the top of the site, not from the page;
+- turns `#heading` into the site's home address plus `#heading`.
+
+The Learning Zone package build has no site folder, so leading-`/` links happen to work there.
 
 ## Workaround
 
-Write site paths without the leading slash: `[the cheat sheet](writing/cheat-sheet/)` gives [the cheat sheet](writing/cheat-sheet/).
+- Write site paths without the leading slash: `[the cheat sheet](writing/cheat-sheet/)` gives [the cheat sheet](writing/cheat-sheet/).
+- Instead of `../`, write the path from the top of the site the same way: `[bug (c)](known-bugs/merge-deep/)` gives [bug (c)](known-bugs/merge-deep/).
+- For a link to a heading on the same page, use HTML: `<a href="#live-example">back to the table</a>` gives <a href="#live-example">back to the table</a>.
