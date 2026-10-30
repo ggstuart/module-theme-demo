@@ -1,4 +1,4 @@
-baseURL = 'https://ggstuart-bot.github.io/example-module/'
+baseURL = 'https://ggstuart.github.io/module-theme-demo/'
 title = 'Teaching materials with Hugo'
 theme = 'module'
 
@@ -10,7 +10,7 @@ theme = 'module'
   moduleName = 'Teaching materials with Hugo'
   customcss = ['css/example.css']
   # The GitHub repository the site is built from (used in the Getting started unit).
-  repository = 'https://github.com/ggstuart-bot/example-module'
+  repository = 'https://github.com/ggstuart/module-theme-demo'
 
 [markup]
   # Use the theme's code highlighting settings.

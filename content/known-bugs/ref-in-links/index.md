@@ -15,7 +15,7 @@ A Markdown link whose address is a `{{</* ref */>}}` or `{{</* relref */>}}` sho
 - `[the cheat sheet]({{</* ref "/writing/cheat-sheet" */>}})` gives [the cheat sheet]({{< ref "/writing/cheat-sheet" >}})
 - `[the cheat sheet]({{</* relref "/writing/cheat-sheet" */>}})` gives [the cheat sheet]({{< relref "/writing/cheat-sheet" >}})
 
-Hover over or follow the links. While the bug is there, the first goes to an address like `/example-module/https://…` and the second to `/example-module//example-module/…`.
+Hover over or follow the links. While the bug is there, the first goes to an address like `/<site folder>/https://…` and the second to `/<site folder>//<site folder>/…` (here the site folder is `module-theme-demo`).
 In the Learning Zone package they start with `//`, which doesn't work either. Once fixed, both open the cheat sheet.
 
 ## What is wrong

@@ -13,9 +13,9 @@ Create your own module from this example, change a page, and see the result.
 If you do not have one, sign up for free at [github.com](https://github.com/signup).
 Use your university email address.
 
-## Copy the example module
+## Copy the starter module
 
-1. Open the [example module repository]({{% repository %}}).
+1. Open the **module-starter** repository, which is the template for new modules. (It is being set up. This demo site's own [repository]({{% repository %}}) is not a template.)
 2. Press the green **Use this template** button, then **Create a new repository**.
 3. Give it a name, for example `CTEC1234`, and press **Create repository**.
 
@@ -71,12 +71,12 @@ The code and name appear in Learning Zone as the name of the imported folder.
 ## Turn on the website (optional)
 
 Your module can also be a public website, which is handy for sharing with students outside Learning Zone.
-A new copy doesn't publish one until you turn it on. Until then, the **Website** workflow on the **Actions** tab still runs
-and shows a green tick, with a note saying that GitHub Pages is off. The **Learning Zone package** workflow works either way.
+The **Website** workflow puts the built site on a branch called `gh-pages` every time you change `main`
+(it shows a note on the **Actions** tab while GitHub Pages is still off). To publish it:
 
 1. In your repository, open **Settings > Pages**.
-2. Under **Build and deployment > Source**, choose **GitHub Actions**.
-3. Open the **Actions** tab, choose **Website**, and press **Run workflow**.
+2. Under **Build and deployment > Source**, choose **Deploy from a branch**.
+3. Under **Branch**, choose **gh-pages** and **/ (root)**, and press **Save**.
 
 After a minute or two your site is at `https://<your-user-name>.github.io/<repository-name>/`.
 The address is also shown on the workflow run's page and in **Settings > Pages**.
