@@ -1,0 +1,65 @@
+<!doctype html><html lang=en-gb><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>DEMO1001: Teaching materials with Hugo
+&ndash; Teaching materials with Hugo</title><link rel="shortcut icon" href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/images/module-logo.svg type=image/x-icon><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/css/onedark.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/css/style.css><link rel=stylesheet href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/css/example.css><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/js/exercise.js type=module></script><script src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/js/menu.js type=module></script></head><body><header class=main-header aria-labelledby=main-title><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/ aria-label=home><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/images/module-logo.svg alt="the module logo"></a><h1 id=main-title><span class="with-colon module-code">DEMO1001</span>
+<span class=module-name>Teaching materials with Hugo</span></h1><nav aria-label="main menu"><label for=toggler aria-label="menu toggler"></label><input id=toggler type=checkbox aria-label="menu toggler">
+<a href=/module-theme-demo/pr-preview/pr-7/writing/>Write Your Own</a><h2>exercises</h2><a href=/module-theme-demo/pr-preview/pr-7/writing/make-an-exercise/>Make an Exercise</a>
+<a href=/module-theme-demo/pr-preview/pr-7/writing/make-a-lecture/>Make a Lecture</a>
+<a href=/module-theme-demo/pr-preview/pr-7/writing/cheat-sheet/>Markdown Cheat Sheet</a><h2>lectures</h2><a href=/module-theme-demo/pr-preview/pr-7/writing/markdown/>Markdown in Five Minutes</a></nav></header><nav aria-label=breadcrumbs class=breadcrumbs><a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/>teaching materials with hugo</a>
+<a href=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/writing/>write your own</a>
+<strong title="this page is Make an exercise">make an exercise</strong></nav><main><img class=logo src=https://ggstuart.github.io/module-theme-demo/pr-preview/pr-7/images/module-logo.svg alt="the module logo"><header class=exercise><h2 class=special>Make an exercise</h2><nav class=pagination><a class=prev href=/module-theme-demo/pr-preview/pr-7/writing/markdown/>Markdown in five minutes</a><a class=next href=/module-theme-demo/pr-preview/pr-7/writing/make-a-lecture/>Make a lecture</a></nav></header><section><nav id=TableOfContents><ul><li><a href=#make-a-new-page>Make a new page</a></li><li><a href=#add-the-settings>Add the settings</a></li><li><a href=#write-something>Write something</a></li><li><a href=#add-a-picture>Add a picture</a></li><li><a href=#save-and-look>Save and look</a></li><li><a href=#check-your-understanding>Check your understanding</a></li></ul></nav><blockquote><p>Work through the steps in order. Each step only takes a few minutes, and
+nothing you do here can break anything.</p></blockquote></section><section><p>Add a new exercise page to your module, using headings, lists, a link and a picture.</p><h2 id=make-a-new-page>Make a new page</h2><p>In your repository on GitHub:</p><ol><li>Open the <code>content/writing</code> folder.</li><li>Press <strong>Add file > Create new file</strong>.</li><li>In the name box type <code>my-page/index.md</code>.
+Typing the <code>/</code> makes the folder for you.</li></ol><h2 id=add-the-settings>Add the settings</h2><p>Every page starts with a few settings between two lines of <code>---</code>.
+Type or paste this at the top of the file:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=l>My first page</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>type</span><span class=p>:</span><span class=w> </span><span class=l>exercise</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>weight</span><span class=p>:</span><span class=w> </span><span class=m>10</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><ul><li><code>title</code> is the page title, used everywhere including Learning Zone.</li><li><code>type: exercise</code> makes it an exercise page like this one.</li><li><code>weight</code> puts the pages of a unit in order. Higher numbers come later.</li></ul><h2 id=write-something>Write something</h2><p>Under the settings, write a short introduction, then a line containing <code>&lt;!--more--></code>.
+Anything above that line is used as the page summary on the unit page.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>This week we look at how plants make food.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>&lt;!--more--&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gu>## Before the lab
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Read chapter 3 and bring:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>-</span> a lab coat
+</span></span><span class=line><span class=cl><span class=k>-</span> your notebook
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gu>## In the lab
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>1.</span> Collect a leaf sample.
+</span></span><span class=line><span class=cl><span class=k>2.</span> Look at it under the microscope.
+</span></span><span class=line><span class=cl><span class=k>3.</span> Sketch what you see.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>See the [<span class=nt>Royal Society of Biology</span>](<span class=na>https://www.rsb.org.uk</span>) for more.
+</span></span></code></pre></td></tr></table></div></div><h2 id=add-a-picture>Add a picture</h2><ol><li>Go back to the <code>content/writing/my-page</code> folder.</li><li>Press <strong>Add file > Upload files</strong> and upload a picture, for example <code>leaf.jpg</code>.</li><li>Edit <code>index.md</code> and add:</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>![<span class=nt>A leaf under the microscope</span>](<span class=na>leaf.jpg</span>)
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>Always describe the picture in the square brackets.
+Screen readers read that text aloud to students who cannot see the image.</p></blockquote><h2 id=save-and-look>Save and look</h2><p>Press <strong>Commit changes</strong>.
+If you turned on the website, it updates itself in a minute or two.
+Your new page also appears in the next Learning Zone package you build.</p><h2 id=check-your-understanding>Check your understanding</h2><p>Compare your file with the source of this page, which is in <code>content/writing/first-page/index.md</code>.
+Everything on this page uses only what you have just seen.</p></section></main><footer><nav class=pagination><a class=prev href=/module-theme-demo/pr-preview/pr-7/writing/markdown/>Markdown in five minutes</a><a class=next href=/module-theme-demo/pr-preview/pr-7/writing/make-a-lecture/>Make a lecture</a></nav><p id=theme><a target=_blank href=https://github.com/ggstuart/module>module theme
+</a>by ggstuart</p></footer></body></html>
