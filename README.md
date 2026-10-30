@@ -27,7 +27,7 @@ Changes go through pull requests. For each pull request the workflows:
 
 - build the website and the Learning Zone package, and attach both to the run as artifacts (`website` and `course-package.zip`);
 - publish a preview of the website at `https://ggstuart.github.io/module-theme-demo/pr-preview/pr-<number>/` and link it in a comment
-  (not for pull requests from forks, which are only built).
+  (not for pull requests from forks or Dependabot, which are only built).
 
 Merging to `main` publishes the site at the top of the `gh-pages` branch, which GitHub Pages serves
 (**Settings > Pages > Build and deployment > Source: Deploy from a branch, Branch: gh-pages, / (root)**).

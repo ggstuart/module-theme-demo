@@ -5,8 +5,8 @@
 # - Pull request: the site is built for, and published at,
 #   https://<owner>.github.io/<repo>/pr-preview/pr-<number>/, and a comment on
 #   the pull request links to it. Closing the pull request removes it.
-#   Pull requests from forks are only built (no preview): their token can't
-#   write to this repository.
+#   Pull requests from forks and from Dependabot are only built (no preview):
+#   their token can't write to this repository.
 # - Every build is also uploaded as an artifact named "website".
 #
 # Pages must be set to: Settings > Pages > Build and deployment >
@@ -88,7 +88,7 @@ jobs:
 
   preview:
     needs: build
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     concurrency:
       group: gh-pages
@@ -107,7 +107,7 @@ jobs:
           action: deploy
 
   remove-preview:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
     runs-on: ubuntu-latest
     concurrency:
       group: gh-pages
