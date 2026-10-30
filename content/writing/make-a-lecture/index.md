@@ -1,7 +1,7 @@
 ---
 title: Make a lecture
 type: exercise
-weight: 2
+weight: 3
 ---
 
 Write three slides and put them together into a lecture.
@@ -36,7 +36,7 @@ Give each one its own `title` and some text.
 ## Make the lecture
 
 Lectures live inside a unit.
-Create `content/lectures/my-lecture/index.md` with:
+Create `content/writing/my-lecture/index.md` with:
 
 ```yaml
 ---

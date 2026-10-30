@@ -14,4 +14,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           submodules: recursive
+      # For now this is the branch proposed in ggstuart/Module#4. It will move to a
+      # tagged release of ggstuart/Module (for example ggstuart/Module/...@v2026.1),
+      # matching the theme submodule, once that exists.
       - uses: ggstuart-bot/Module/.github/actions/learning-zone@learning-zone-export

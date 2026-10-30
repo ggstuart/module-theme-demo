@@ -1,0 +1,27 @@
+---
+title: "(i) HTML files next to an exercise aren't published"
+type: exercise
+weight: 9
+---
+
+An iframe of an HTML file in an exercise's own folder shows the site's home page instead.
+
+<!--more-->
+
+**Fixed in:** (not yet; found while building this site)
+
+## Live example
+
+`example.html` sits next to this page's `index.md`. Once fixed, the frame says "Hello from example.html".
+
+{{< iframe src="example.html" height="120" >}}{{< /iframe >}}
+
+## What is wrong
+
+With `security.allowContent` (see (g)), an HTML file in a page's folder is a page of its own, not a plain file.
+The iframe shortcode finds it as a page resource, which has no address of its own, so it falls back to the site's home page.
+The same happens in the Learning Zone package.
+
+## Workaround
+
+Put the file in `assets/examples/` and use `src="examples/example.html"`.

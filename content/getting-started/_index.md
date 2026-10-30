@@ -1,7 +1,7 @@
 ---
 title: Getting started
 type: unit
-weight: 2
+weight: 3
 ---
 
 Make your own copy of this module in five minutes, using nothing but a web browser.

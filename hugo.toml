@@ -9,6 +9,8 @@ theme = 'module'
   moduleCode = 'DEMO1001'
   moduleName = 'Teaching materials with Hugo'
   customcss = ['css/example.css']
+  # The GitHub repository the site is built from (used in the Getting started unit).
+  repository = 'https://github.com/ggstuart-bot/example-module'
 
 [markup]
   # Use the theme's code highlighting settings.
@@ -21,3 +23,13 @@ theme = 'module'
 # and the Learning Zone package when you build with --environment learningzone).
 [outputs]
   _merge = 'deep'
+
+# Lets HTML files sit in content/ next to the pages that use them (live
+# examples shown in an iframe). Hugo 0.162 and later refuse them otherwise:
+# see Known bugs > HTML files in content.
+[security]
+  allowContent = ['text/html', 'text/markdown']
+
+# Tags, used by one page in the Advanced units (Hugo makes a page per tag).
+[taxonomies]
+  tag = 'tags'

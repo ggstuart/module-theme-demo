@@ -15,7 +15,7 @@ Use your university email address.
 
 ## Copy the example module
 
-1. Open the [example module repository](https://github.com/ggstuart-bot/example-module).
+1. Open the [example module repository]({{% repository %}}).
 2. Press the green **Use this template** button, then **Create a new repository**.
 3. Give it a name, for example `CTEC1234`, and press **Create repository**.
 
@@ -32,12 +32,20 @@ content/
 │  ├─ _index.md            the unit's own page
 │  ├─ why/index.md         a lecture
 │  └─ tour/index.md        an exercise
-├─ writing/                another unit
-└─ slides/                 the slides that lectures are made from
+├─ code/                   a unit
+├─ getting-started/        a unit
+├─ writing/                a unit
+├─ learning-zone/          a unit
+├─ advanced-…/             more units, using every feature (you can delete them)
+├─ known-bugs/             a unit
+└─ slides/                 not a unit: the slides that lectures are made from
 ```
 
-> A **unit** is a folder. A **page** is a folder with an `index.md` file in it.
+> A **unit** is a folder whose `_index.md` says `type: unit`. A **page** is a folder with an `index.md` file in it.
 > Pictures for a page go in the same folder as its `index.md`.
+>
+> `content/slides` is different: it is a store of slides, not a unit. Its pages never appear on their own,
+> on the website or in Learning Zone; they only appear inside the lectures that list them.
 
 ## Change something
 
@@ -63,9 +71,15 @@ The code and name appear in Learning Zone as the name of the imported folder.
 ## Turn on the website (optional)
 
 Your module can also be a public website, which is handy for sharing with students outside Learning Zone.
+A new copy doesn't publish one until you turn it on. Until then, the **Website** workflow on the **Actions** tab still runs
+and shows a green tick, with a note saying that GitHub Pages is off. The **Learning Zone package** workflow works either way.
 
 1. In your repository, open **Settings > Pages**.
-2. Under **Build and deployment**, choose **GitHub Actions**.
+2. Under **Build and deployment > Source**, choose **GitHub Actions**.
 3. Open the **Actions** tab, choose **Website**, and press **Run workflow**.
 
 After a minute or two your site is at `https://<your-user-name>.github.io/<repository-name>/`.
+The address is also shown on the workflow run's page and in **Settings > Pages**.
+
+(GitHub Pages is free for public repositories. For a private repository it needs a paid GitHub plan, or a free
+[GitHub Education](https://education.github.com) account for teachers.)

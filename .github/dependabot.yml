@@ -1,0 +1,13 @@
+# Once a week, Dependabot checks for a newer version of the theme (the
+# themes/module submodule) and of the GitHub Actions used by the workflows,
+# and opens a pull request you can look at and merge.
+version: 2
+updates:
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

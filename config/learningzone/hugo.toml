@@ -1,7 +1,13 @@
-# Settings for the Learning Zone package build:
-#   hugo --environment learningzone --destination course-package
-# The GitHub Action sets these for you, so this file is only needed to build
-# the package on your own computer.
+# Settings for the Learning Zone version of the pages, used by
+#   hugo server --environment learningzone       (a preview)
+#   hugo --environment learningzone -d course-package   (a package, without the size reduction)
+# The GitHub Action and themes/module/.github/actions/learning-zone/build.sh
+# set these for you.
 baseURL = "/"
 relativeURLs = true
 disableKinds = ["taxonomy", "term", "rss", "sitemap", "robotsTXT", "404"]
+
+# The package build downloads the web fonts and Mermaid (for diagrams) once,
+# and puts them in the package. These are the only addresses it may use.
+[security.http]
+  urls = ['^https://fonts\.googleapis\.com/', '^https://fonts\.gstatic\.com/', '^https://cdn\.jsdelivr\.net/npm/mermaid@']

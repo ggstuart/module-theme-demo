@@ -1,5 +1,5 @@
 ---
-title: Write your first page
+title: Make an exercise
 type: exercise
 weight: 2
 ---

@@ -1,6 +1,11 @@
-/* The theme's default slide text colour is commented out in style.css, which
-   leaves slide text pale on a pale slide. This restores the intended value.
-   Remove this file once the theme defines --clr-slide-text itself. */
-:root {
+/* Workaround for Known bugs (b): the theme's default slide text colour is
+   commented out in style.css, which leaves slide text pale on a pale slide.
+   This restores the intended value everywhere except on pages that contain a
+   slide with the class known-bug-unpatched (the live example of the bug),
+   so that page shows the bug until the theme is fixed. */
+body:not(:has(.known-bug-unpatched)) {
     --clr-slide-text: hsl(0, 10%, 10%);
 }
+
+/* Used by Advanced: site settings > Stylesheets: page.css in that page's folder overrides this. */
+.css-order-demo { border: 4px solid hsl(0 0% 60%); padding: 1rem; }

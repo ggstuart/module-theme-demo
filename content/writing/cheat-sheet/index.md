@@ -1,8 +1,7 @@
 ---
 title: Markdown cheat sheet
 type: exercise
-weight: 3
-mermaid: true
+weight: 4
 ---
 
 Everything you are likely to need, on one page.
@@ -77,23 +76,7 @@ Name the language after the backticks (`python`, `java`, `html`, `sql`...) and i
 
 ## Diagrams
 
-You can even draw diagrams from text, using [Mermaid](https://mermaid.js.org).
-
-````markdown
-```mermaid
-flowchart LR
-    A[Write Markdown] --> B[GitHub builds it]
-    B --> C[Website]
-    B --> D[Learning Zone package]
-```
-````
-
-```mermaid
-flowchart LR
-    A[Write Markdown] --> B[GitHub builds it]
-    B --> C[Website]
-    B --> D[Learning Zone package]
-```
+Diagrams are possible too: see *Advanced: exercises and pages*.
 
 ## YouTube videos
 
