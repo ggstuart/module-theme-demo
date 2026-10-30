@@ -12,7 +12,7 @@ Deep headings, duplicate headings, a contents list that can't be turned off, and
 
 ## Contents list
 
-This page sets `display_toc: false`, but exercises always show their contents list: the setting only affects pages without a type and unit pages.
+This page sets `display_toc: false`, but exercises always show their contents list (see *Known bugs (j)*).
 The box under the title is the site's own `layouts/partials/exercise/intro.html`, which replaces the theme's on every exercise.
 
 ## Level 2
