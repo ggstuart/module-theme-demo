@@ -1,9 +1,13 @@
 ---
 title: What students see
+classes: [burger, gap]
 params:
   layout:
-    cols: 1fr 1fr
+    cols: 3fr 2fr
+    rows: auto 1fr auto
 ---
+
+> The same text, styled and laid out for you.
 
 > Plants turn **light** into food.
 >
@@ -11,4 +15,7 @@ params:
 > - needs carbon dioxide
 > - makes oxygen
 
-The same text, styled and laid out for you. Students move through slides with the arrow keys, by swiping on a phone, or with the buttons at the bottom.
+The title becomes the slide's heading, `**light**` becomes **light**, and each `-` line becomes a bullet point.
+Every slide in every lecture gets the same style, so you never line anything up by hand.
+
+> Students move through slides with the arrow keys, by swiping on a phone, or with the buttons at the bottom.

@@ -4,6 +4,7 @@ classes: [block-burger]
 params:
   layout:
     cols: 1fr 1fr
+    rows: auto 1fr auto
 ---
 
 > Every blockquote spans the full width.

@@ -1,16 +1,13 @@
 ---
 title: One source, two places
-classes: [contain]
+classes: [contain, gap]
+params:
+  layout:
+    rows: auto 1fr auto
 ---
 
-```text {linenos=false}
-                 your text files
-                        |
-           +------------+------------+
-           |                         |
-       a website              a Learning Zone
-   (for anyone, any         package (one zip file,
-    time, any device)        imported into a module)
-```
+> One set of text files, and two places students find them.
 
-Both are built automatically, so they never get out of step.
+![Your text files are built by GitHub into a website (for anyone, any time, any device) and a Learning Zone package (one zip file, imported into a module)](images/pipeline.svg)
+
+> Both are built automatically, so they never get out of step.

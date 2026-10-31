@@ -1,9 +1,13 @@
 ---
 title: Lists
+classes: [burger, gap]
 params:
   layout:
     cols: 1fr 1fr
+    rows: auto 1fr auto
 ---
+
+> A list is one item per line.
 
 ```markdown {linenos=false}
 - apples
@@ -20,3 +24,5 @@ params:
 > 1. Read the brief
 > 2. Plan your answer
 > 3. Write it up
+
+> Start a line with `-` for a bullet point, or with a number for a numbered list.
