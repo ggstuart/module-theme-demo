@@ -4,7 +4,7 @@ classes: [burger, gap]
 params:
   layout:
     cols: 1fr 1fr
-    rows: 1fr auto 1fr
+    rows: auto 1fr auto
 ---
 
 > Two code blocks on a two-column slide sit side by side.

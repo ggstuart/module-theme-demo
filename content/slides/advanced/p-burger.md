@@ -4,6 +4,7 @@ classes: [p-burger, gap]
 params:
   layout:
     cols: 1fr 1fr
+    rows: auto 1fr auto
 ---
 
 Every paragraph spans the full width.

@@ -4,7 +4,7 @@ classes: [burger, gap]
 params:
   layout:
     cols: 3fr 2fr
-    rows: 1fr auto 1fr
+    rows: auto 1fr auto
 ---
 
 > The lecture file just lists its slides, in order.

@@ -1,8 +1,10 @@
 ---
 title: Java
+classes: [burger, gap]
 params:
   layout:
-    rows: 1fr auto 1fr
+    cols: 3fr 2fr
+    rows: auto 1fr auto
 ---
 
 > Any language works: write its name after the three backticks.
@@ -10,9 +12,19 @@ params:
 ```java
 public class Greeting {
     public static void main(String[] args) {
-        System.out.println("Hello, students!");
+        String[] names = {"Ada", "Grace", "Alan"};
+        for (String name : names) {
+            System.out.println("Hello, " + name + "!");
+        }
     }
 }
 ```
 
-> The colours and line numbers are added for you.
+```text {linenos=false}
+$ java Greeting.java
+Hello, Ada!
+Hello, Grace!
+Hello, Alan!
+```
+
+> The colours and line numbers are added for you. Program output goes in a `text` block.
