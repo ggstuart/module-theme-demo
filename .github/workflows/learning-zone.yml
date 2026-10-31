@@ -12,7 +12,7 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
       # For now this is the branch proposed in ggstuart/Module#4. It will move to a
