@@ -1,11 +1,12 @@
-# Builds course-package.zip for Learning Zone every time you change something.
-# Download it from the run's page, under "Artifacts".
+# Builds course-package.zip for Learning Zone on every change to main and on
+# every pull request. Download it from the run's page, under "Artifacts".
 name: Learning Zone package
 
 on:
   workflow_dispatch:      # adds a "Run workflow" button on the Actions tab
   push:
     branches: [main]
+  pull_request:
 
 jobs:
   package:
